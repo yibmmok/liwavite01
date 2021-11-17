@@ -1,4 +1,25 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: 'liwaicon';
+  src: local('liwaicon'), url('./fonts/liwaicon.ttf') format('ttf');
+}
+@font-face {
+  font-family: 'liwaicon2';
+  src: local('liwaicon2'), url('./fonts/liwaicon2.ttf') format('ttf');
+}
+
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: liwaicon;
+    font-weight: 400;
+    src: url(/fonts/liwaicon.ttf) format("ttf");
+  }
+  @font-face {
+    font-family: liwaicon2;
+    src: url(/fonts/liwaicon2.ttf) format("ttf");
+  }
+}
